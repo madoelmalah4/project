@@ -1,0 +1,37 @@
+body
+{
+    background-color: black;
+    font-size: 30px;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+img
+{
+animation: animate linear forwards;
+animation-timeline: view();
+animation-range: contain;
+animation-duration: 0.1;
+z-index: -1;
+}
+
+.divaya
+{
+    position: absolute;
+    background-color: green;
+    animation: animated linear forwards;
+        animation-timeline: scroll();
+        animation-range: contain;
+        animation-duration: 0.1;
+}
+@keyframes animated {
+    from {width: 0px;}
+
+    to {
+        width: 100%;
+    }
+}
+@keyframes animate
+{
+    from{}
+    to{scale: 3;opacity: 0;}
+}
